@@ -1,0 +1,9 @@
+import cx_Oracle
+
+
+
+connection = cx_Oracle.connect("SYSTEM/python1234@localhost/orcl.hwzuw2bt5bletkqiilhjykoz0b.dx.internal.cloudapp.net")
+c = connection.cursor()
+cmd = "create table new(naga varchar2(20))"
+c.execute(cmd)
+
